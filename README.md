@@ -1,61 +1,65 @@
-# YayCommerce — Website Redesign
+# YayCommerce — Website (redesign)
 
-A fresh, modern marketing website for **YayCommerce**, the all-in-one commerce
-platform that helps brands *sell more and stress less*.
+A modern marketing site for **YayCommerce**, the studio behind a full toolkit of
+**WooCommerce plugins**. Rebuilt from scratch based on YayCommerce's real product
+lineup and brand positioning.
 
-![Built with HTML, CSS & vanilla JS](https://img.shields.io/badge/stack-HTML%20%C2%B7%20CSS%20%C2%B7%20JS-6c4df6)
+> *"One brand, a full toolkit — the WooCommerce plugins your store's been missing."*
 
-## ✨ Highlights
+🔗 **Live:** https://tommyclaude.github.io/Yay/
 
-- **Zero build step** — pure HTML, CSS, and vanilla JavaScript. Open and go.
-- **Fully responsive** — fluid layouts from 320px phones to wide desktops.
-- **Cohesive design system** — tokens for color, type, spacing, and shadows in
-  `assets/css/styles.css`.
-- **Polished interactions** — scroll-reveal, animated counters, a sticky
-  header, an animated logo marquee, a monthly/yearly pricing toggle, an
-  accessible FAQ accordion, and a mobile menu.
-- **Accessible & fast** — semantic markup, ARIA states, `prefers-reduced-motion`
-  support, and system/Google fonts with no heavy frameworks.
+## About YayCommerce (the real company)
 
-## 🎨 Design language
+Founded in **2017** in **Nha Trang, Vietnam**, YayCommerce builds premium
+WooCommerce / WordPress plugins trusted by **100,000+ websites**. The suite:
 
-| Token        | Value     | Use                         |
-|--------------|-----------|-----------------------------|
-| Violet 500   | `#6c4df6` | Primary brand / CTAs        |
-| Mint 400     | `#22d3a6` | Success / accents           |
-| Coral 400    | `#ff7a59` | Secondary accent            |
-| Amber 400    | `#ffc24b` | Highlights / ratings        |
-| Ink 900      | `#0c0a1d` | Text / dark surfaces        |
+| Plugin | What it does |
+|--------|--------------|
+| **YayMail** | Drag-and-drop WooCommerce email customizer (flagship) |
+| **YayCurrency** | Multi-currency switcher with auto country detection |
+| **YayPricing** | Dynamic pricing & discount rules |
+| **YaySwatches** | Color / image / button variation swatches |
+| **YayExtra** | Extra product options (engraving, gifts, add-ons) |
+| **YaySMTP** | SMTP delivery & email logs (SES, SendGrid, Mailgun…) |
+| **YayReviews** | Advanced customer reviews |
+| **YayBoost** | Sales booster / conversion tools |
 
-Typography is **Plus Jakarta Sans** with a tight, confident display scale.
+## Design
 
-## 📁 Structure
+- **Brand:** teal / emerald palette suited to the WooCommerce ecosystem, with a
+  distinct accent colour per plugin.
+- **Type:** Plus Jakarta Sans.
+- **Zero build step** — pure HTML, CSS and vanilla JS.
+- **Sections:** hero with a live YayMail email-builder mockup · trust strip ·
+  8-plugin showcase grid · YayMail spotlight · animated stats · why-us ·
+  get-started steps · pricing (Free / Single Pro / Bundle, monthly–annual
+  toggle) · reviews · FAQ · CTA · footer.
+- **Interactions:** scroll reveal, animated counters, sticky header, pricing
+  toggle, accessible FAQ accordion, mobile nav.
+- **Accessible:** semantic markup, ARIA states, `prefers-reduced-motion`.
+
+## Structure
 
 ```
-.
-├── index.html              # Landing page (hero, features, pricing, FAQ, CTA…)
-├── assets/
-│   ├── css/styles.css      # Design system + components
-│   ├── js/main.js          # Interactions (reveal, counters, toggles, nav)
-│   └── img/favicon.svg     # Brand mark
-└── README.md
+index.html
+assets/css/styles.css   · design system + components
+assets/js/main.js        · interactions
+assets/img/favicon.svg   · brand mark
+.github/workflows/deploy-pages.yml · auto-deploy to GitHub Pages
 ```
 
-## 🚀 Run it locally
-
-It's static — just open `index.html`, or serve the folder:
+## Run locally
 
 ```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
+python3 -m http.server 8000   # then open http://localhost:8000
 ```
 
-## 🧭 Sections
+## Deploy
 
-Hero · Trusted-by marquee · Features grid · Conversion & automation splits ·
-Animated stats · How it works · Pricing (monthly/yearly) · Testimonials ·
-FAQ · Newsletter CTA · Footer.
+Every push to the default branch auto-deploys to GitHub Pages via the included
+GitHub Actions workflow.
 
 ---
 
-Designed and built as a complete redesign concept for YayCommerce.
+Independent redesign concept built from YayCommerce's public product information.
+Not affiliated with YayCommerce, Automattic or WooCommerce.
