@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>YayCommerce — WooCommerce plugins your store's been missing</title>
-  <meta name="description" content="One brand, a full toolkit. YayCommerce builds the WooCommerce plugins your store needs — email customization, multi-currency, dynamic pricing, swatches, extra options and more. Trusted by 100,000+ websites." />
+  <meta name="description" content="One brand, a full toolkit. Premium WooCommerce plugins for email, currency, pricing, swatches & more. Trusted by 100,000+ stores. Save 30% on the All-Access Bundle." />
   <meta name="theme-color" content="#10b394" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <meta property="og:title" content="YayCommerce — WooCommerce plugins your store's been missing" />
@@ -12,10 +12,17 @@
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://ps.w.org" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <!-- Announcement -->
+  <div class="announce" role="region" aria-label="Promotion">
+    <span>🎉 <strong>Summer Sale</strong> — Save 30% on the All-Access Bundle. Ends in <span class="countdown" data-countdown>48:00:00</span> · <a href="#pricing">Claim deal →</a></span>
+    <button class="x" data-announce-close aria-label="Dismiss">×</button>
+  </div>
+
   <!-- Header -->
   <header class="site-header">
     <div class="container nav">
@@ -30,15 +37,15 @@
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#plugins">Plugins</a>
-        <a href="#yaymail">YayMail</a>
-        <a href="#why">Why us</a>
+        <a href="product.html">YayMail</a>
+        <a href="#bundle">Bundle</a>
         <a href="#pricing">Pricing</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
       </nav>
       <div class="nav-cta">
-        <a href="#" class="btn btn--ghost">Documentation</a>
-        <a href="#plugins" class="btn btn--primary">Get plugins</a>
+        <a href="#" class="btn btn--ghost">Sign in</a>
+        <a href="#pricing" class="btn btn--primary">Get the bundle</a>
         <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
       </div>
     </div>
@@ -49,32 +56,23 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy" data-reveal>
-          <span class="hero-badge"><span class="tag">WooCommerce</span> Building plugins since 2017 · Nha Trang 🇻🇳</span>
-          <h1 class="display">One brand,<br />a <span class="gradient-text">full toolkit.</span></h1>
-          <p class="lead">YayCommerce builds the WooCommerce plugins your store's been missing — from email customization to multi-currency, dynamic pricing, swatches and more. Beautiful, reliable, and a joy to use.</p>
+          <span class="hero-badge"><span class="tag">WooCommerce</span> 8 plugins · 1 toolkit · since 2017</span>
+          <h1 class="display">The plugins your<br />store's been <span class="gradient-text">missing.</span></h1>
+          <p class="lead">From branded emails to multi-currency, dynamic pricing and swatches — YayCommerce gives your WooCommerce store everything it needs to convert more shoppers into customers.</p>
           <div class="hero-actions">
-            <a href="#plugins" class="btn btn--primary btn--lg">Explore the plugins</a>
-            <a href="#yaymail" class="btn btn--ghost btn--lg">✉️ Meet YayMail</a>
+            <a href="#pricing" class="btn btn--primary btn--lg">Get the All-Access Bundle</a>
+            <a href="product.html" class="btn btn--ghost btn--lg">✉️ Explore YayMail</a>
           </div>
-          <div class="hero-proof">
-            <div class="avatars" aria-hidden="true">
-              <span style="background:#ff6b5b">W</span>
-              <span style="background:#22c55e">P</span>
-              <span style="background:#8b5cf6">S</span>
-              <span style="background:#3b82f6">E</span>
-              <span style="background:#07211c">+</span>
-            </div>
-            <div>
-              <div class="stars">★★★★★</div>
-              <span>Trusted by <strong>100,000+</strong> websites worldwide</span>
-            </div>
+          <div class="tbadges">
+            <span class="tbadge"><span class="i">★</span> 4.9/5 · 2,400+ reviews</span>
+            <span class="tbadge"><span class="i">✓</span> 100,000+ active installs</span>
+            <span class="tbadge"><span class="i">↩</span> 14-day money-back</span>
           </div>
         </div>
 
-        <!-- YayMail email-builder mock -->
         <div class="hero-visual" data-reveal data-delay="120">
           <div class="float-chip c1">
-            <span class="ic" style="background:#ffe9e6;color:#ff6b5b">✉️</span>
+            <span class="picon sm" style="--c:var(--mail)"><img src="https://ps.w.org/yaymail/assets/icon-256x256.png" alt="" loading="lazy" onerror="this.remove()"><i>✉️</i></span>
             <div>Drag &amp; drop<small>No code needed</small></div>
           </div>
           <div class="mail-app" aria-hidden="true">
@@ -112,8 +110,8 @@
             </div>
           </div>
           <div class="float-chip c2">
-            <span class="ic" style="background:#d1faee;color:#0a7d68">★</span>
-            <div>4.9 / 5<small>2,400+ reviews</small></div>
+            <span class="ic" style="background:#d1faee;color:#0a7d68">↑</span>
+            <div>+27% opens<small>after YayMail</small></div>
           </div>
         </div>
       </div>
@@ -122,12 +120,12 @@
     <!-- Trust strip -->
     <section class="trust">
       <div class="container">
-        <p>Powering WooCommerce stores in 190+ countries</p>
+        <p>Trusted by 100,000+ WooCommerce stores in 190+ countries</p>
         <div class="trust-row">
-          <span class="item">100,000+ active installs</span>
+          <span class="item">100,000+ installs</span>
           <span class="item">50,000+ merchants</span>
-          <span class="item"><span class="star">★</span> 4.9 average rating</span>
-          <span class="item">8 powerful plugins</span>
+          <span class="item"><span class="star">★</span> 4.9 rating</span>
+          <span class="item">8 plugins</span>
           <span class="item">WordPress.org featured</span>
         </div>
       </div>
@@ -138,66 +136,89 @@
       <div class="container">
         <div class="section-head center" data-reveal>
           <span class="eyebrow">The toolkit</span>
-          <h2>Every plugin your WooCommerce store needs</h2>
-          <p class="lead">Each one solves a real problem — start free, upgrade to Pro when you're ready. They're built to work beautifully together.</p>
+          <h2>Eight plugins. One ecosystem.</h2>
+          <p class="lead">Each solves a real problem on your store — start free, upgrade to Pro when you're ready. They're built to work beautifully together.</p>
         </div>
         <div class="grid grid-4">
-          <article class="plugin" style="--c:var(--mail)" data-reveal>
-            <div class="top"><div class="ic">✉️</div><span class="free">Free + Pro</span></div>
-            <h3>YayMail</h3>
-            <div class="role">Email Customizer</div>
-            <p>The #1 drag-and-drop WooCommerce email template builder. Design branded transactional emails — no code.</p>
-            <a href="#yaymail" class="more">Learn more</a>
-          </article>
-          <article class="plugin" style="--c:var(--currency)" data-reveal data-delay="60">
-            <div class="top"><div class="ic">💱</div><span class="free">Free + Pro</span></div>
-            <h3>YayCurrency</h3>
-            <div class="role">Multi-Currency Switcher</div>
-            <p>Auto-detect currency by country and let shoppers switch on the go with real-time exchange rates.</p>
-            <a href="#" class="more">Learn more</a>
-          </article>
-          <article class="plugin" style="--c:var(--pricing)" data-reveal data-delay="120">
-            <div class="top"><div class="ic">🏷️</div><span class="free pro">Pro</span></div>
-            <h3>YayPricing</h3>
-            <div class="role">Dynamic Pricing &amp; Discounts</div>
-            <p>Build powerful discount rules — BOGO, bulk, role-based and cart-level pricing for any campaign.</p>
-            <a href="#" class="more">Learn more</a>
-          </article>
-          <article class="plugin" style="--c:var(--swatch)" data-reveal data-delay="180">
-            <div class="top"><div class="ic">🎨</div><span class="free">Free + Pro</span></div>
-            <h3>YaySwatches</h3>
-            <div class="role">Variation Swatches</div>
-            <p>Replace plain dropdowns with color, image and button swatches that make variable products shine.</p>
-            <a href="#" class="more">Learn more</a>
-          </article>
-          <article class="plugin" style="--c:var(--extra)" data-reveal>
-            <div class="top"><div class="ic">🧩</div><span class="free">Free + Pro</span></div>
-            <h3>YayExtra</h3>
-            <div class="role">Extra Product Options</div>
-            <p>Let customers personalize products — engraving, print-on-demand, gift wrap and custom add-ons.</p>
-            <a href="#" class="more">Learn more</a>
-          </article>
-          <article class="plugin" style="--c:var(--smtp)" data-reveal data-delay="60">
-            <div class="top"><div class="ic">📮</div><span class="free">Free</span></div>
-            <h3>YaySMTP</h3>
-            <div class="role">SMTP &amp; Email Logs</div>
-            <p>Make sure emails actually land. Connect Amazon SES, SendGrid, Mailgun, Brevo, Google &amp; more.</p>
-            <a href="#" class="more">Learn more</a>
-          </article>
-          <article class="plugin" style="--c:var(--reviews)" data-reveal data-delay="120">
-            <div class="top"><div class="ic">⭐</div><span class="free">Free + Pro</span></div>
-            <h3>YayReviews</h3>
-            <div class="role">Advanced Customer Reviews</div>
-            <p>Collect photo reviews, send reminders and showcase social proof that turns browsers into buyers.</p>
-            <a href="#" class="more">Learn more</a>
-          </article>
-          <article class="plugin" style="--c:var(--boost)" data-reveal data-delay="180">
-            <div class="top"><div class="ic">🚀</div><span class="free pro">Pro</span></div>
-            <h3>YayBoost</h3>
-            <div class="role">Sales Booster</div>
-            <p>Spark first orders, recover abandoned carts and grow order value with built-in conversion tools.</p>
-            <a href="#" class="more">Learn more</a>
-          </article>
+          <a class="plugin" href="product.html" style="--c:var(--mail)" data-reveal>
+            <div class="top"><span class="picon" style="--c:var(--mail)"><img src="https://ps.w.org/yaymail/assets/icon-256x256.png" alt="YayMail" loading="lazy" onerror="this.remove()"><i>✉️</i></span><span class="free">Free + Pro</span></div>
+            <h3>YayMail</h3><div class="role">Email Customizer</div>
+            <p>The #1 drag-and-drop WooCommerce email builder. Branded transactional emails — no code.</p>
+            <span class="more">View plugin</span>
+          </a>
+          <a class="plugin" href="product.html" style="--c:var(--currency)" data-reveal data-delay="60">
+            <div class="top"><span class="picon" style="--c:var(--currency)"><img src="https://ps.w.org/yaycurrency/assets/icon-256x256.png" alt="YayCurrency" loading="lazy" onerror="this.remove()"><i>💱</i></span><span class="free">Free + Pro</span></div>
+            <h3>YayCurrency</h3><div class="role">Multi-Currency Switcher</div>
+            <p>Auto-detect currency by country and let shoppers switch on the go with live rates.</p>
+            <span class="more">View plugin</span>
+          </a>
+          <a class="plugin" href="product.html" style="--c:var(--pricing)" data-reveal data-delay="120">
+            <div class="top"><span class="picon" style="--c:var(--pricing)"><img src="https://ps.w.org/yaypricing/assets/icon-256x256.png" alt="YayPricing" loading="lazy" onerror="this.remove()"><i>🏷️</i></span><span class="free pro">Pro</span></div>
+            <h3>YayPricing</h3><div class="role">Dynamic Pricing &amp; Discounts</div>
+            <p>Build powerful BOGO, bulk, role-based and cart-level discount rules for any campaign.</p>
+            <span class="more">View plugin</span>
+          </a>
+          <a class="plugin" href="product.html" style="--c:var(--swatch)" data-reveal data-delay="180">
+            <div class="top"><span class="picon" style="--c:var(--swatch)"><img src="https://ps.w.org/yayswatches/assets/icon-256x256.png" alt="YaySwatches" loading="lazy" onerror="this.remove()"><i>🎨</i></span><span class="free">Free + Pro</span></div>
+            <h3>YaySwatches</h3><div class="role">Variation Swatches</div>
+            <p>Turn plain dropdowns into color, image &amp; button swatches that make products shine.</p>
+            <span class="more">View plugin</span>
+          </a>
+          <a class="plugin" href="product.html" style="--c:var(--extra)" data-reveal>
+            <div class="top"><span class="picon" style="--c:var(--extra)"><img src="https://ps.w.org/yayextra/assets/icon-256x256.png" alt="YayExtra" loading="lazy" onerror="this.remove()"><i>🧩</i></span><span class="free">Free + Pro</span></div>
+            <h3>YayExtra</h3><div class="role">Extra Product Options</div>
+            <p>Let customers personalize products — engraving, print-on-demand, gift wrap, add-ons.</p>
+            <span class="more">View plugin</span>
+          </a>
+          <a class="plugin" href="product.html" style="--c:var(--smtp)" data-reveal data-delay="60">
+            <div class="top"><span class="picon" style="--c:var(--smtp)"><img src="https://ps.w.org/yaysmtp/assets/icon-256x256.png" alt="YaySMTP" loading="lazy" onerror="this.remove()"><i>📮</i></span><span class="free">Free</span></div>
+            <h3>YaySMTP</h3><div class="role">SMTP &amp; Email Logs</div>
+            <p>Make sure emails land. Connect Amazon SES, SendGrid, Mailgun, Brevo, Google &amp; more.</p>
+            <span class="more">View plugin</span>
+          </a>
+          <a class="plugin" href="product.html" style="--c:var(--reviews)" data-reveal data-delay="120">
+            <div class="top"><span class="picon" style="--c:var(--reviews)"><img src="https://ps.w.org/yay-customer-reviews-woocommerce/assets/icon-256x256.png" alt="YayReviews" loading="lazy" onerror="this.remove()"><i>⭐</i></span><span class="free">Free + Pro</span></div>
+            <h3>YayReviews</h3><div class="role">Advanced Customer Reviews</div>
+            <p>Collect photo reviews, send reminders and showcase the social proof that sells.</p>
+            <span class="more">View plugin</span>
+          </a>
+          <a class="plugin" href="product.html" style="--c:var(--boost)" data-reveal data-delay="180">
+            <div class="top"><span class="picon" style="--c:var(--boost)"><i>🚀</i></span><span class="free pro">Pro</span></div>
+            <h3>YayBoost</h3><div class="role">Sales Booster</div>
+            <p>Spark first orders, recover abandoned carts and grow order value with conversion tools.</p>
+            <span class="more">View plugin</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bundle value -->
+    <section class="section section--tight" id="bundle">
+      <div class="container">
+        <div class="value-band" data-reveal>
+          <div class="value-grid">
+            <div>
+              <span class="eyebrow">Best value</span>
+              <h2 style="margin:12px 0 10px">Get all 8 plugins for less than the price of 3</h2>
+              <p class="lead">The All-Access Bundle unlocks every Pro plugin, on unlimited sites, with VIP support and early access to new releases. One purchase, the whole toolkit.</p>
+              <ul class="value-list">
+                <li><span class="ck">✓</span> All 8 plugins, Pro tier</li>
+                <li><span class="ck">✓</span> Unlimited sites</li>
+                <li><span class="ck">✓</span> 1 year of updates</li>
+                <li><span class="ck">✓</span> VIP priority support</li>
+                <li><span class="ck">✓</span> Early access to new plugins</li>
+                <li><span class="ck">✓</span> 14-day money-back</li>
+              </ul>
+            </div>
+            <div class="save-box">
+              <span class="save-pill">Save 30% · Summer Sale</span>
+              <div class="was">$356/yr</div>
+              <div class="now">$249<small>/yr</small></div>
+              <p style="color:var(--slate-400);font-size:0.86rem;margin-bottom:18px">Lifetime license also available</p>
+              <a href="#pricing" class="btn btn--primary btn--block btn--lg">Claim the bundle</a>
+              <div class="secure" style="color:var(--slate-400)">🔒 Secure checkout · Instant access</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -208,13 +229,13 @@
         <div class="sl-copy" data-reveal>
           <span class="eyebrow">Flagship · YayMail</span>
           <h2>Beautiful WooCommerce emails, built by dragging</h2>
-          <p class="lead">YayMail turns dull default emails into on-brand experiences your customers love. Drag elements into place, preview live, and ship — all without touching a line of code.</p>
+          <p class="lead">YayMail turns dull default emails into on-brand experiences customers love — no code. Drag elements, preview live, and ship in minutes.</p>
           <ul class="feature-list">
             <li><span class="ck">✓</span><div><strong>11 WooCommerce email templates</strong><span>Customize every order, invoice and notification email.</span></div></li>
-            <li><span class="ck">✓</span><div><strong>50+ third-party integrations</strong><span>Works with Subscriptions, Memberships, Bookings and more.</span></div></li>
-            <li><span class="ck">✓</span><div><strong>Live drag-and-drop editor</strong><span>Blocks for logo, text, columns, buttons, social and order details.</span></div></li>
+            <li><span class="ck">✓</span><div><strong>50+ third-party integrations</strong><span>Subscriptions, Memberships, Bookings and more.</span></div></li>
+            <li><span class="ck">✓</span><div><strong>Live drag-and-drop editor</strong><span>Blocks for logo, text, columns, buttons, social, order details.</span></div></li>
           </ul>
-          <a href="#pricing" class="btn btn--primary" style="margin-top:26px">Start free with YayMail</a>
+          <a href="product.html" class="btn btn--primary" style="margin-top:26px">View YayMail &amp; pricing</a>
         </div>
         <div class="sl-media" data-reveal data-delay="120">
           <div class="glass">
@@ -223,13 +244,9 @@
           </div>
           <div class="glass">
             <div class="row"><small>Templates you can edit</small><span class="chip-pill">11 built-in</span></div>
-            <div class="tmpl-row">
-              <span>New order</span><span>Processing</span><span>Completed</span><span>Invoice</span><span>Refund</span><span>On-hold</span>
-            </div>
+            <div class="tmpl-row"><span>New order</span><span>Processing</span><span>Completed</span><span>Invoice</span><span>Refund</span><span>On-hold</span></div>
           </div>
-          <div class="glass">
-            <div class="row"><small>Setup time</small><span class="big" style="font-size:1.4rem">5 min</span></div>
-          </div>
+          <div class="glass"><div class="row"><small>Setup time</small><span class="big" style="font-size:1.4rem">5 min</span></div></div>
         </div>
       </div>
     </section>
@@ -254,30 +271,15 @@
         <div class="section-head center" data-reveal>
           <span class="eyebrow">Why YayCommerce</span>
           <h2>Plugins you can actually rely on</h2>
-          <p class="lead">Since 2017 we've had one mission: make eCommerce better. Here's what 100,000+ stores trust us for.</p>
+          <p class="lead">Since 2017, one mission: make eCommerce better. Here's what 100,000+ stores trust us for.</p>
         </div>
         <div class="grid grid-3">
           <div class="bcard" data-reveal><div class="ic">⚡</div><h3>Lightweight &amp; fast</h3><p>Clean, optimized code that won't slow your store down or bloat your database.</p></div>
           <div class="bcard" data-reveal data-delay="60"><div class="ic">💬</div><h3>Support that replies</h3><p>A responsive team known for fast, friendly help — exactly when you need it.</p></div>
           <div class="bcard" data-reveal data-delay="120"><div class="ic">🧩</div><h3>One ecosystem</h3><p>Every plugin shares the same design language and plays nicely together.</p></div>
-          <div class="bcard" data-reveal><div class="ic">🔄</div><h3>Always up to date</h3><p>Frequent updates that stay in step with the latest WooCommerce and WordPress.</p></div>
-          <div class="bcard" data-reveal data-delay="60"><div class="ic">🎁</div><h3>Free to start</h3><p>Most plugins have a generous free version on WordPress.org — upgrade only when ready.</p></div>
+          <div class="bcard" data-reveal><div class="ic">🔄</div><h3>Always up to date</h3><p>Frequent updates in step with the latest WooCommerce and WordPress.</p></div>
+          <div class="bcard" data-reveal data-delay="60"><div class="ic">🎁</div><h3>Free to start</h3><p>Most plugins have a generous free version on WordPress.org — upgrade when ready.</p></div>
           <div class="bcard" data-reveal data-delay="120"><div class="ic">🌍</div><h3>Built for the world</h3><p>Translation-ready, RTL-friendly and trusted across 190+ countries.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How it works -->
-    <section class="section section--tight">
-      <div class="container">
-        <div class="section-head center" data-reveal>
-          <span class="eyebrow">Get started</span>
-          <h2>Up and running in minutes</h2>
-        </div>
-        <div class="steps">
-          <div class="step" data-reveal><div class="n">1</div><h3>Install the plugin</h3><p>Download free from WordPress.org or upload the Pro zip — activates in one click.</p></div>
-          <div class="step" data-reveal data-delay="80"><div class="n">2</div><h3>Customize visually</h3><p>Configure everything from a clean dashboard with live preview. No coding required.</p></div>
-          <div class="step" data-reveal data-delay="160"><div class="n">3</div><h3>Sell more</h3><p>Launch and watch better emails, pricing and product pages lift your conversions.</p></div>
         </div>
       </div>
     </section>
@@ -288,7 +290,7 @@
         <div class="section-head center" data-reveal>
           <span class="eyebrow">Pricing</span>
           <h2>Start free. Go Pro when you grow.</h2>
-          <p class="lead">Buy a single plugin or save big with the all-access bundle. Every Pro plan includes updates &amp; support, with a 14-day money-back guarantee.</p>
+          <p class="lead">Buy a single plugin or save big with the All-Access Bundle. Every Pro plan includes updates, support &amp; a 14-day money-back guarantee.</p>
         </div>
         <div class="toggle-wrap" data-reveal>
           <span>Monthly</span>
@@ -318,13 +320,13 @@
             <div class="per"><span data-monthly>per month, one plugin</span><span data-yearly hidden>per year, one plugin</span></div>
             <ul>
               <li><span class="ck">✓</span> All Pro features unlocked</li>
-              <li><span class="ck">✓</span> Use on 1 site (5-site option)</li>
+              <li><span class="ck">✓</span> 1 site (5-site option)</li>
               <li><span class="ck">✓</span> 1 year of updates</li>
               <li><span class="ck">✓</span> Priority email support</li>
-              <li><span class="ck">✓</span> 50+ third-party integrations</li>
+              <li><span class="ck">✓</span> 50+ integrations</li>
               <li><span class="ck">✓</span> 14-day money-back</li>
             </ul>
-            <a href="#" class="btn btn--primary btn--block">Get Pro</a>
+            <a href="product.html" class="btn btn--primary btn--block">Choose a plugin</a>
           </div>
           <div class="price-card" data-reveal data-delay="160">
             <div class="plan">All-Access Bundle</div>
@@ -333,7 +335,7 @@
             <div class="per"><span data-monthly>per month, all plugins</span><span data-yearly hidden>per year, all plugins</span></div>
             <ul>
               <li><span class="ck">✓</span> All 8 plugins, Pro tier</li>
-              <li><span class="ck">✓</span> Use on unlimited sites</li>
+              <li><span class="ck">✓</span> Unlimited sites</li>
               <li><span class="ck">✓</span> Lifetime option available</li>
               <li><span class="ck">✓</span> VIP priority support</li>
               <li><span class="ck">✓</span> Early access to new plugins</li>
@@ -354,36 +356,12 @@
           <p class="lead">Merchants and agencies keep coming back to YayCommerce. Here's why.</p>
         </div>
         <div class="quote-grid">
-          <figure class="quote" data-reveal>
-            <div class="stars">★★★★★</div>
-            <p>"YayMail is hands down the best email customizer for WooCommerce. Designed all our order emails in an afternoon and they look incredible."</p>
-            <div class="who"><span class="av" style="background:#ff6b5b">DL</span><div><strong>Diana Lowe</strong><span>Founder, Maison Sage</span></div></div>
-          </figure>
-          <figure class="quote" data-reveal data-delay="60">
-            <div class="stars">★★★★★</div>
-            <p>"YayCurrency just works. Auto-detects the visitor's country and the conversions feel instant. Support answered me within the hour."</p>
-            <div class="who"><span class="av" style="background:#22c55e">RP</span><div><strong>Rohan Patel</strong><span>Owner, TrailGoods</span></div></div>
-          </figure>
-          <figure class="quote" data-reveal data-delay="120">
-            <div class="stars">★★★★★</div>
-            <p>"We run client stores on the All-Access bundle. One ecosystem, consistent UI, and updates we can trust. Huge time saver for our agency."</p>
-            <div class="who"><span class="av" style="background:#8b5cf6">EK</span><div><strong>Elena Kovač</strong><span>Lead Dev, Pixel&amp;Co</span></div></div>
-          </figure>
-          <figure class="quote" data-reveal>
-            <div class="stars">★★★★★</div>
-            <p>"YayExtra let us add engraving and gift-wrap options without a developer. Average order value went up almost immediately."</p>
-            <div class="who"><span class="av" style="background:#3b82f6">MT</span><div><strong>Marcus Tan</strong><span>Co-founder, Little Atelier</span></div></div>
-          </figure>
-          <figure class="quote" data-reveal data-delay="60">
-            <div class="stars">★★★★★</div>
-            <p>"Switched our variation dropdowns to YaySwatches and the product pages instantly looked more premium. Customers find sizes faster too."</p>
-            <div class="who"><span class="av" style="background:#eab308">AB</span><div><strong>Amelia Brooks</strong><span>Manager, Northbound</span></div></div>
-          </figure>
-          <figure class="quote" data-reveal data-delay="120">
-            <div class="stars">★★★★★</div>
-            <p>"YaySMTP fixed our email deliverability in ten minutes flat — and it's free. The logs alone are worth installing it."</p>
-            <div class="who"><span class="av" style="background:#06b6d4">JF</span><div><strong>Jonas Fischer</strong><span>Developer, Helmkraft</span></div></div>
-          </figure>
+          <figure class="quote" data-reveal><div class="stars">★★★★★</div><p>"YayMail is hands down the best email customizer for WooCommerce. Designed all our order emails in an afternoon and they look incredible."</p><div class="who"><span class="av" style="background:#ff6b5b">DL</span><div><strong>Diana Lowe</strong><span>Founder, Maison Sage</span></div></div></figure>
+          <figure class="quote" data-reveal data-delay="60"><div class="stars">★★★★★</div><p>"YayCurrency just works. Auto-detects the visitor's country and conversions feel instant. Support answered me within the hour."</p><div class="who"><span class="av" style="background:#22c55e">RP</span><div><strong>Rohan Patel</strong><span>Owner, TrailGoods</span></div></div></figure>
+          <figure class="quote" data-reveal data-delay="120"><div class="stars">★★★★★</div><p>"We run client stores on the All-Access bundle. One ecosystem, consistent UI, updates we can trust. Huge time-saver for our agency."</p><div class="who"><span class="av" style="background:#8b5cf6">EK</span><div><strong>Elena Kovač</strong><span>Lead Dev, Pixel&amp;Co</span></div></div></figure>
+          <figure class="quote" data-reveal><div class="stars">★★★★★</div><p>"YayExtra let us add engraving and gift-wrap without a developer. Average order value went up almost immediately."</p><div class="who"><span class="av" style="background:#3b82f6">MT</span><div><strong>Marcus Tan</strong><span>Co-founder, Little Atelier</span></div></div></figure>
+          <figure class="quote" data-reveal data-delay="60"><div class="stars">★★★★★</div><p>"Switched our dropdowns to YaySwatches and the product pages instantly looked premium. Customers find sizes faster too."</p><div class="who"><span class="av" style="background:#eab308">AB</span><div><strong>Amelia Brooks</strong><span>Manager, Northbound</span></div></div></figure>
+          <figure class="quote" data-reveal data-delay="120"><div class="stars">★★★★★</div><p>"YaySMTP fixed our deliverability in ten minutes — and it's free. The logs alone are worth installing it."</p><div class="who"><span class="av" style="background:#06b6d4">JF</span><div><strong>Jonas Fischer</strong><span>Developer, Helmkraft</span></div></div></figure>
         </div>
       </div>
     </section>
@@ -391,31 +369,13 @@
     <!-- FAQ -->
     <section class="section" id="faq" style="background:#fff;border-block:1px solid var(--border)">
       <div class="container">
-        <div class="section-head center" data-reveal>
-          <span class="eyebrow">FAQ</span>
-          <h2>Good to know</h2>
-        </div>
+        <div class="section-head center" data-reveal><span class="eyebrow">FAQ</span><h2>Good to know</h2></div>
         <div class="faq" data-reveal>
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">Are YayCommerce plugins really free?<span class="pm">+</span></button>
-            <div class="faq-a"><p>Yes — most of our plugins, including YayMail and YaySMTP, have a fully functional free version on WordPress.org. You only upgrade to Pro when you want advanced features, integrations and priority support.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">Do the plugins work with my theme?<span class="pm">+</span></button>
-            <div class="faq-a"><p>Our plugins are built to WooCommerce and WordPress standards, so they work with virtually any well-coded theme — including popular ones like Astra, Flatsome, Kadence and Blocksy. They're also translation-ready and RTL-friendly.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">What's included in the All-Access Bundle?<span class="pm">+</span></button>
-            <div class="faq-a"><p>Every plugin in the suite at the Pro tier — YayMail, YayCurrency, YayPricing, YaySwatches, YayExtra, YaySMTP, YayReviews and YayBoost — usable on unlimited sites, with VIP support and early access to new plugins.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">Is there a money-back guarantee?<span class="pm">+</span></button>
-            <div class="faq-a"><p>Absolutely. Every Pro purchase is backed by a 14-day money-back guarantee. If a plugin isn't right for your store, just reach out and we'll refund you — no hard feelings.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">How do updates and support work?<span class="pm">+</span></button>
-            <div class="faq-a"><p>Pro licenses include one year of automatic updates and priority support. You'll always get the latest features and compatibility fixes, and our team is known for fast, friendly replies.</p></div>
-          </div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">Are YayCommerce plugins really free?<span class="pm">+</span></button><div class="faq-a"><p>Yes — most plugins, including YayMail and YaySMTP, have a fully functional free version on WordPress.org. You only upgrade to Pro for advanced features, integrations and priority support.</p></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">Do the plugins work with my theme?<span class="pm">+</span></button><div class="faq-a"><p>They're built to WooCommerce and WordPress standards, so they work with virtually any well-coded theme — Astra, Flatsome, Kadence, Blocksy and more. They're translation-ready and RTL-friendly.</p></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">What's in the All-Access Bundle?<span class="pm">+</span></button><div class="faq-a"><p>Every plugin at the Pro tier — YayMail, YayCurrency, YayPricing, YaySwatches, YayExtra, YaySMTP, YayReviews and YayBoost — usable on unlimited sites, with VIP support and early access to new plugins.</p></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">Is there a money-back guarantee?<span class="pm">+</span></button><div class="faq-a"><p>Absolutely. Every Pro purchase is backed by a 14-day money-back guarantee. If a plugin isn't right for your store, reach out and we'll refund you — no hard feelings.</p></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false">How do updates and support work?<span class="pm">+</span></button><div class="faq-a"><p>Pro licenses include one year of automatic updates and priority support. You always get the latest features and compatibility fixes, and our team replies fast.</p></div></div>
         </div>
       </div>
     </section>
@@ -426,10 +386,9 @@
         <div class="cta-band" data-reveal>
           <span class="eyebrow" style="color:var(--teal-300)">Ready to upgrade your store?</span>
           <h2>Give your WooCommerce store<br />the toolkit it deserves</h2>
-          <p>Join 100,000+ websites already growing with YayCommerce plugins. Start free today — go Pro whenever you're ready.</p>
+          <p>Join 100,000+ websites already growing with YayCommerce. Start free today — go Pro whenever you're ready.</p>
           <form class="cta-actions" data-demo-form style="max-width:520px;margin-inline:auto">
-            <input type="email" required placeholder="you@yourstore.com" aria-label="Email address"
-              style="flex:1;min-width:200px;padding:16px 20px;border-radius:14px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);color:#fff;font-size:1rem" />
+            <input type="email" required placeholder="you@yourstore.com" aria-label="Email address" style="flex:1;min-width:200px;padding:16px 20px;border-radius:14px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);color:#fff;font-size:1rem" />
             <button type="submit" class="btn btn--light btn--lg" data-label="Get started free">Get started free</button>
           </form>
           <p data-form-note hidden style="margin-top:18px;color:var(--teal-300);font-weight:600">🎉 Thanks! Check your inbox to grab your free plugins.</p>
@@ -452,45 +411,12 @@
             Yay<b>Commerce</b>
           </a>
           <p>Building the WooCommerce plugins your store's been missing. Since 2017, from Nha Trang, Vietnam — with a mission to make eCommerce better.</p>
-          <div class="socials">
-            <a href="#" aria-label="X">𝕏</a>
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="WordPress">W</a>
-            <a href="#" aria-label="YouTube">▶</a>
-          </div>
+          <div class="socials"><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="WordPress">W</a><a href="#" aria-label="YouTube">▶</a></div>
         </div>
-        <div class="footer-col">
-          <h4>Plugins</h4>
-          <a href="#yaymail">YayMail</a>
-          <a href="#plugins">YayCurrency</a>
-          <a href="#plugins">YayPricing</a>
-          <a href="#plugins">YaySwatches</a>
-          <a href="#plugins">YayExtra</a>
-        </div>
-        <div class="footer-col">
-          <h4>More plugins</h4>
-          <a href="#plugins">YaySMTP</a>
-          <a href="#plugins">YayReviews</a>
-          <a href="#plugins">YayBoost</a>
-          <a href="#pricing">Bundle</a>
-          <a href="#pricing">Pricing</a>
-        </div>
-        <div class="footer-col">
-          <h4>Resources</h4>
-          <a href="#">Documentation</a>
-          <a href="#">Demo store</a>
-          <a href="#">Changelog</a>
-          <a href="#">Blog</a>
-          <a href="#faq">FAQ</a>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <a href="#">About us</a>
-          <a href="#">Careers</a>
-          <a href="#contact">Contact</a>
-          <a href="#">Affiliates</a>
-          <a href="#">Support</a>
-        </div>
+        <div class="footer-col"><h4>Plugins</h4><a href="product.html">YayMail</a><a href="product.html">YayCurrency</a><a href="product.html">YayPricing</a><a href="product.html">YaySwatches</a><a href="product.html">YayExtra</a></div>
+        <div class="footer-col"><h4>More plugins</h4><a href="product.html">YaySMTP</a><a href="product.html">YayReviews</a><a href="product.html">YayBoost</a><a href="#bundle">Bundle</a><a href="#pricing">Pricing</a></div>
+        <div class="footer-col"><h4>Resources</h4><a href="#">Documentation</a><a href="#">Demo store</a><a href="#">Changelog</a><a href="#">Blog</a><a href="#faq">FAQ</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="#">About us</a><a href="#">Careers</a><a href="#contact">Contact</a><a href="#">Affiliates</a><a href="#">Support</a></div>
       </div>
       <div class="footer-bottom">
         <span>© <span data-year>2026</span> YayCommerce. Not affiliated with Automattic or WooCommerce.</span>

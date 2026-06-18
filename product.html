@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YayMail Pro — WooCommerce Email Customizer | YayCommerce</title>
+  <meta name="description" content="YayMail Pro — the #1 drag-and-drop WooCommerce email customizer. Design branded transactional emails with 11 templates and 50+ integrations. From $49. 14-day money-back guarantee." />
+  <meta name="theme-color" content="#10b394" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://ps.w.org" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Announcement -->
+  <div class="announce" role="region" aria-label="Promotion">
+    <span>🎉 <strong>Summer Sale</strong> — Save up to 40% on YayMail Pro. Ends in <span class="countdown" data-countdown>48:00:00</span> · <a href="#buy">Claim deal →</a></span>
+    <button class="x" data-announce-close aria-label="Dismiss">×</button>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="YayCommerce home">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34d8ad"/><stop offset="1" stop-color="#0a7d68"/></linearGradient></defs>
+          <rect width="64" height="64" rx="16" fill="url(#lg)"/>
+          <path d="M19 17 L32 35 L45 17" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M32 35 L32 47" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round"/>
+        </svg>
+        Yay<b>Commerce</b>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#plugins">Plugins</a>
+        <a href="product.html">YayMail</a>
+        <a href="index.html#bundle">Bundle</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#reviews">Reviews</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#" class="btn btn--ghost">Sign in</a>
+        <a href="#buy" class="btn btn--primary">Buy YayMail</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span>
+        <a href="index.html#plugins">Plugins</a><span class="sep">/</span>
+        <b>YayMail — Email Customizer</b>
+      </nav>
+
+      <!-- PDP -->
+      <section class="pdp" id="buy">
+        <!-- Gallery -->
+        <div class="gallery" data-reveal>
+          <div class="gallery-main" data-gallery-main>
+            <!-- slide 0: builder -->
+            <div class="slide is-active" data-slide="0">
+              <div class="mail-app" style="border:none;border-radius:0;box-shadow:none;height:100%">
+                <div class="mail-bar"><span class="dots"><i></i><i></i><i></i></span><span class="title">YayMail · <small>Drag-and-drop editor</small></span></div>
+                <div class="mail-body" style="min-height:0;height:calc(100% - 47px)">
+                  <div class="mail-blocks">
+                    <div class="blk"><span class="gi">🖼️</span>Logo</div>
+                    <div class="blk"><span class="gi">📝</span>Text</div>
+                    <div class="blk"><span class="gi">🧾</span>Order</div>
+                    <div class="blk"><span class="gi">🔘</span>Button</div>
+                    <div class="blk"><span class="gi">📍</span>Social</div>
+                  </div>
+                  <div class="mail-canvas">
+                    <div class="email-card">
+                      <div class="email-head"><span class="ribbon">Editing</span><div class="logo">YourBrand</div></div>
+                      <div class="email-inner">
+                        <h5>Thanks for your order, Mai! 🎉</h5>
+                        <div class="line w90"></div><div class="line w70"></div>
+                        <div class="email-order"><div class="row"><span>Linen Tote — Sage</span><span>$38.00</span></div><div class="row total"><span>Total</span><span>$43.00</span></div></div>
+                        <div class="email-btn">Track your order</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 1: real screenshot attempt w/ crafted fallback -->
+            <div class="slide" data-slide="1">
+              <img src="https://ps.w.org/yaymail/assets/screenshot-1.png" alt="YayMail screenshot" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="shot" style="display:none">
+                <div class="bar"><i></i><i></i><i></i><span style="font-size:0.72rem;font-weight:700;color:var(--slate-500);margin-left:6px">Completed order email</span></div>
+                <div class="body">
+                  <div class="email-card" style="margin:auto;max-width:280px;box-shadow:var(--shadow-sm)">
+                    <div class="email-head"><div class="logo">YourBrand</div></div>
+                    <div class="email-inner"><h5>Your order is on its way 📦</h5><div class="line w90"></div><div class="line w70"></div><div class="email-btn">Track shipment</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 2: template gallery -->
+            <div class="slide" data-slide="2">
+              <div class="shot">
+                <div class="bar"><i></i><i></i><i></i><span style="font-size:0.72rem;font-weight:700;color:var(--slate-500);margin-left:6px">11 email templates</span></div>
+                <div class="body" style="grid-template-columns:1fr 1fr 1fr;grid-auto-rows:1fr">
+                  <div style="background:#fff;border:1px solid var(--border);border-radius:9px;padding:8px"><div style="height:14px;background:var(--teal-500);border-radius:4px;margin-bottom:6px"></div><div class="line" style="margin:0 0 4px"></div><div class="line w70" style="margin:0"></div></div>
+                  <div style="background:#fff;border:1px solid var(--border);border-radius:9px;padding:8px"><div style="height:14px;background:var(--mail);border-radius:4px;margin-bottom:6px"></div><div class="line" style="margin:0 0 4px"></div><div class="line w70" style="margin:0"></div></div>
+                  <div style="background:#fff;border:1px solid var(--border);border-radius:9px;padding:8px"><div style="height:14px;background:var(--swatch);border-radius:4px;margin-bottom:6px"></div><div class="line" style="margin:0 0 4px"></div><div class="line w70" style="margin:0"></div></div>
+                  <div style="background:#fff;border:1px solid var(--border);border-radius:9px;padding:8px"><div style="height:14px;background:var(--pricing);border-radius:4px;margin-bottom:6px"></div><div class="line" style="margin:0 0 4px"></div><div class="line w70" style="margin:0"></div></div>
+                  <div style="background:#fff;border:1px solid var(--border);border-radius:9px;padding:8px"><div style="height:14px;background:var(--extra);border-radius:4px;margin-bottom:6px"></div><div class="line" style="margin:0 0 4px"></div><div class="line w70" style="margin:0"></div></div>
+                  <div style="background:#fff;border:1px solid var(--border);border-radius:9px;padding:8px"><div style="height:14px;background:var(--currency);border-radius:4px;margin-bottom:6px"></div><div class="line" style="margin:0 0 4px"></div><div class="line w70" style="margin:0"></div></div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 3: mobile preview -->
+            <div class="slide" data-slide="3">
+              <div class="shot" style="align-items:center;justify-content:center">
+                <div class="bar"><i></i><i></i><i></i><span style="font-size:0.72rem;font-weight:700;color:var(--slate-500);margin-left:6px">Mobile-responsive preview</span></div>
+                <div class="body" style="place-items:center">
+                  <div style="width:150px;background:#fff;border:8px solid var(--ink-900);border-radius:22px;overflow:hidden;box-shadow:var(--shadow-md)">
+                    <div class="email-head" style="padding:14px"><div class="logo" style="font-size:0.9rem">YourBrand</div></div>
+                    <div class="email-inner" style="padding:12px"><h5 style="font-size:0.82rem">Order confirmed 🎉</h5><div class="line w90"></div><div class="line w70"></div><div class="email-btn" style="font-size:0.7rem;padding:8px">View order</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-thumbs" data-gallery-thumbs>
+            <button class="is-active" data-index="0" aria-label="Editor"><div class="mini" style="background:linear-gradient(135deg,var(--teal-400),var(--teal-700));display:grid;place-items:center;color:#fff;font-size:1.2rem">✏️</div></button>
+            <button data-index="1" aria-label="Email preview"><div class="mini" style="background:linear-gradient(135deg,#ff8f82,var(--mail));display:grid;place-items:center;color:#fff;font-size:1.2rem">✉️</div></button>
+            <button data-index="2" aria-label="Templates"><div class="mini" style="background:linear-gradient(135deg,#a78bfa,var(--swatch));display:grid;place-items:center;color:#fff;font-size:1.2rem">🗂️</div></button>
+            <button data-index="3" aria-label="Mobile"><div class="mini" style="background:linear-gradient(135deg,#38bdf8,var(--smtp));display:grid;place-items:center;color:#fff;font-size:1.2rem">📱</div></button>
+          </div>
+        </div>
+
+        <!-- Buy box -->
+        <div class="buybox" data-reveal data-delay="100">
+          <div class="peyebrow">
+            <span class="picon sm" style="--c:var(--mail)"><img src="https://ps.w.org/yaymail/assets/icon-256x256.png" alt="" loading="lazy" onerror="this.remove()"><i>✉️</i></span>
+            #1 WooCommerce Email Customizer
+          </div>
+          <h1>YayMail Pro</h1>
+          <div class="pmeta">
+            <span class="rating"><span class="stars">★★★★★</span> <b>4.9</b> · 2,400+ reviews</span>
+            <span class="rating">✓ <b>100,000+</b> active installs</span>
+          </div>
+          <p class="sub">Design stunning, on-brand WooCommerce emails with a live drag-and-drop editor — no code. 11 built-in templates, 50+ integrations.</p>
+
+          <div class="plan-label"><span>Choose your license</span><span class="hint">All plans include 1 year of updates</span></div>
+          <div class="plan-opts" data-plans>
+            <label class="plan-opt is-active" data-price="49" data-was="79">
+              <span class="radio"></span>
+              <span class="pname">Personal <small>1 site</small></span>
+              <span class="pp">$49 <span class="was">$79</span></span>
+            </label>
+            <label class="plan-opt" data-price="89" data-was="129">
+              <span class="tag-pop">Most popular</span>
+              <span class="radio"></span>
+              <span class="pname">Professional <small>5 sites</small></span>
+              <span class="pp">$89 <span class="was">$129</span></span>
+            </label>
+            <label class="plan-opt" data-price="169" data-was="249">
+              <span class="radio"></span>
+              <span class="pname">Agency <small>25 sites</small></span>
+              <span class="pp">$169 <span class="was">$249</span></span>
+            </label>
+          </div>
+
+          <div class="price-line">
+            <span class="now" data-price-now>$49</span>
+            <span class="was" data-price-was>$79</span>
+            <span class="off" data-price-off>Save 38%</span>
+          </div>
+          <p class="price-note">One-time payment · billed yearly for updates &amp; support · cancel anytime.</p>
+
+          <a href="#" class="btn btn--primary btn--block btn--lg">🛒 Buy YayMail Pro</a>
+          <a href="#" class="btn btn--ghost btn--block">Add to cart</a>
+          <div class="secure">🔒 Secure SSL checkout · Visa · Mastercard · PayPal</div>
+
+          <div class="assure">
+            <div class="a"><span class="i">↩</span><div>14-day money-back guarantee</div></div>
+            <div class="a"><span class="i">⚡</span><div>Instant download &amp; license key</div></div>
+            <div class="a"><span class="i">🔄</span><div>1 year of updates included</div></div>
+            <div class="a"><span class="i">💬</span><div>Priority email support</div></div>
+          </div>
+
+          <div class="included">
+            <h4>What's included</h4>
+            <ul>
+              <li><span class="ck">✓</span> All 11 WooCommerce email templates</li>
+              <li><span class="ck">✓</span> 50+ third-party plugin integrations</li>
+              <li><span class="ck">✓</span> Premium content blocks &amp; layouts</li>
+              <li><span class="ck">✓</span> Conditional logic &amp; per-email design</li>
+              <li><span class="ck">✓</span> Export / import &amp; multilingual support</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Tabs section -->
+    <section class="section" style="padding-top:40px">
+      <div class="container">
+        <div class="tabs" data-tabs>
+          <button class="is-active" data-tab="overview">Overview</button>
+          <button data-tab="features">Features</button>
+          <button data-tab="integrations">Integrations</button>
+          <button data-tab="reviews">Reviews</button>
+          <button data-tab="faq">FAQ</button>
+        </div>
+
+        <!-- Overview -->
+        <div class="tabpane is-active" data-pane="overview">
+          <div class="spotlight">
+            <div>
+              <span class="eyebrow">Why YayMail</span>
+              <h2 style="margin:12px 0 14px">Default WooCommerce emails are boring. Yours don't have to be.</h2>
+              <p class="lead">Every order, invoice and notification email is a chance to build your brand and bring customers back. YayMail makes them gorgeous in minutes — drag a block, drop it, preview live, hit save.</p>
+              <ul class="feature-list">
+                <li><span class="ck">✓</span><div><strong>No code, no developer</strong><span>A visual editor anyone on your team can use.</span></div></li>
+                <li><span class="ck">✓</span><div><strong>On-brand in minutes</strong><span>Match your colors, logo and tone across every email.</span></div></li>
+                <li><span class="ck">✓</span><div><strong>Higher engagement</strong><span>Stores see up to 27% more opens after switching.</span></div></li>
+              </ul>
+            </div>
+            <div class="sl-media">
+              <div class="glass"><div class="row"><small>Avg. setup time</small><span class="big" style="font-size:1.5rem">5 min</span></div></div>
+              <div class="glass"><div class="row"><small>Open-rate lift</small><span class="chip-pill">▲ 27%</span></div><div class="bar-track" style="height:8px;border-radius:999px;background:rgba(255,255,255,0.12);margin-top:12px;overflow:hidden"><div style="height:100%;width:78%;background:linear-gradient(90deg,var(--teal-400),var(--teal-300))"></div></div></div>
+              <div class="glass"><div class="row"><small>Works with</small><span class="chip-pill">50+ plugins</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Features -->
+        <div class="tabpane" data-pane="features">
+          <div class="grid grid-3">
+            <div class="bcard"><div class="ic">🧱</div><h3>Drag-and-drop blocks</h3><p>Logo, heading, text, columns, button, divider, social, order table — arrange any layout visually.</p></div>
+            <div class="bcard"><div class="ic">🗂️</div><h3>11 email templates</h3><p>Customize new order, processing, completed, refunded, invoice, on-hold and every other Woo email.</p></div>
+            <div class="bcard"><div class="ic">👁️</div><h3>Live preview</h3><p>See exactly what customers will get on desktop and mobile before you hit send.</p></div>
+            <div class="bcard"><div class="ic">🎨</div><h3>Full brand control</h3><p>Colors, fonts, spacing, backgrounds and buttons — pixel-level control without code.</p></div>
+            <div class="bcard"><div class="ic">🔀</div><h3>Conditional logic</h3><p>Show or hide content based on order status, products, shipping method and more.</p></div>
+            <div class="bcard"><div class="ic">🌐</div><h3>Multilingual &amp; RTL</h3><p>WPML &amp; Polylang ready, translation-friendly and fully right-to-left compatible.</p></div>
+          </div>
+        </div>
+
+        <!-- Integrations -->
+        <div class="tabpane" data-pane="integrations">
+          <div class="section-head" style="margin-bottom:28px"><h2>Works with 50+ plugins you already use</h2><p class="lead" style="margin-top:10px">YayMail extends the emails of your favorite WooCommerce extensions out of the box.</p></div>
+          <div class="intg">
+            <span>WooCommerce Subscriptions</span><span>WooCommerce Memberships</span><span>WooCommerce Bookings</span>
+            <span>YITH Wishlist</span><span>Dokan</span><span>WCFM Marketplace</span><span>Advanced Shipment Tracking</span>
+            <span>PDF Invoices &amp; Packing Slips</span><span>Points &amp; Rewards</span><span>WooCommerce Deposits</span>
+            <span>Product Add-Ons</span><span>Germanized</span><span>YayCurrency</span><span>YayExtra</span><span>+ 36 more</span>
+          </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="tabpane" data-pane="reviews">
+          <div class="section-head" style="margin-bottom:28px">
+            <div class="rating" style="font-size:1.1rem"><span class="stars" style="font-size:1.3rem">★★★★★</span> <b>4.9</b> out of 5 · based on 2,400+ reviews</div>
+          </div>
+          <div class="quote-grid">
+            <figure class="quote"><div class="stars">★★★★★</div><p>"Absolutely essential. We redesigned every transactional email to match our brand in one sitting. Customers actually reply to our order emails now."</p><div class="who"><span class="av" style="background:#ff6b5b">DL</span><div><strong>Diana Lowe</strong><span>Maison Sage</span></div></div></figure>
+            <figure class="quote"><div class="stars">★★★★★</div><p>"The drag-and-drop is buttery smooth and the live preview saved me hours. Support replied in under an hour when I had a question."</p><div class="who"><span class="av" style="background:#3b82f6">MT</span><div><strong>Marcus Tan</strong><span>Little Atelier</span></div></div></figure>
+            <figure class="quote"><div class="stars">★★★★★</div><p>"Best $49 I've spent on my store. Works perfectly with Subscriptions and our open rates jumped noticeably."</p><div class="who"><span class="av" style="background:#22c55e">RP</span><div><strong>Rohan Patel</strong><span>TrailGoods</span></div></div></figure>
+            <figure class="quote"><div class="stars">★★★★★</div><p>"As an agency we install YayMail on every client build now. Reliable, well-coded, and the team ships updates constantly."</p><div class="who"><span class="av" style="background:#8b5cf6">EK</span><div><strong>Elena Kovač</strong><span>Pixel&amp;Co</span></div></div></figure>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="tabpane" data-pane="faq">
+          <div class="faq">
+            <div class="faq-item"><button class="faq-q" aria-expanded="false">Is there a free version?<span class="pm">+</span></button><div class="faq-a"><p>Yes — YayMail has a free version on WordPress.org that customizes all 11 WooCommerce email templates. YayMail Pro unlocks premium blocks, 50+ integrations, conditional logic and priority support.</p></div></div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false">How many sites can I use it on?<span class="pm">+</span></button><div class="faq-a"><p>It depends on your license: Personal covers 1 site, Professional 5 sites, and Agency 25 sites. You can upgrade anytime and only pay the difference.</p></div></div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false">What happens after one year?<span class="pm">+</span></button><div class="faq-a"><p>Your plugin keeps working forever. To continue receiving updates and support after 12 months, simply renew at a discounted rate. No surprise lockouts.</p></div></div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you offer refunds?<span class="pm">+</span></button><div class="faq-a"><p>Yes — every purchase is covered by a no-questions-asked 14-day money-back guarantee. If YayMail isn't right for you, we'll refund you in full.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cross-sell -->
+    <section class="section section--tight" style="background:#fff;border-block:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head center" data-reveal><span class="eyebrow">Complete your toolkit</span><h2>Pairs perfectly with</h2></div>
+        <div class="grid grid-4">
+          <a class="plugin" href="product.html" style="--c:var(--smtp)" data-reveal>
+            <div class="top"><span class="picon" style="--c:var(--smtp)"><img src="https://ps.w.org/yaysmtp/assets/icon-256x256.png" alt="YaySMTP" loading="lazy" onerror="this.remove()"><i>📮</i></span><span class="free">Free</span></div>
+            <h3>YaySMTP</h3><div class="role">Email deliverability</div><p>Make sure those beautiful emails actually reach the inbox.</p><span class="more">View plugin</span>
+          </a>
+          <a class="plugin" href="product.html" style="--c:var(--reviews)" data-reveal data-delay="60">
+            <div class="top"><span class="picon" style="--c:var(--reviews)"><img src="https://ps.w.org/yay-customer-reviews-woocommerce/assets/icon-256x256.png" alt="YayReviews" loading="lazy" onerror="this.remove()"><i>⭐</i></span><span class="free">Free + Pro</span></div>
+            <h3>YayReviews</h3><div class="role">Customer reviews</div><p>Request reviews by email and turn happy buyers into social proof.</p><span class="more">View plugin</span>
+          </a>
+          <a class="plugin" href="product.html" style="--c:var(--currency)" data-reveal data-delay="120">
+            <div class="top"><span class="picon" style="--c:var(--currency)"><img src="https://ps.w.org/yaycurrency/assets/icon-256x256.png" alt="YayCurrency" loading="lazy" onerror="this.remove()"><i>💱</i></span><span class="free">Free + Pro</span></div>
+            <h3>YayCurrency</h3><div class="role">Multi-currency</div><p>Show prices in every shopper's local currency, automatically.</p><span class="more">View plugin</span>
+          </a>
+          <a class="plugin" href="index.html#bundle" style="--c:var(--teal-500)" data-reveal data-delay="180">
+            <div class="top"><span class="picon" style="--c:var(--teal-500)"><i>🎁</i></span><span class="free pro">Save 30%</span></div>
+            <h3>All-Access Bundle</h3><div class="role">All 8 plugins</div><p>Get YayMail and every other plugin for less than the price of three.</p><span class="more">See the bundle</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky buy bar -->
+  <div class="sticky-buy" data-sticky-buy>
+    <div class="inner">
+      <span class="picon" style="--c:var(--mail)"><img src="https://ps.w.org/yaymail/assets/icon-256x256.png" alt="" loading="lazy" onerror="this.remove()"><i>✉️</i></span>
+      <div class="who"><strong>YayMail Pro</strong><span><span class="stars" style="color:#f5a623">★★★★★</span> 4.9 · Personal — 1 site</span></div>
+      <span class="price"><span class="was" data-sticky-was>$79</span><span data-sticky-now>$49</span></span>
+      <a href="#buy" class="btn btn--primary">🛒 Buy now</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+              <rect width="64" height="64" rx="16" fill="#10b394"/>
+              <path d="M19 17 L32 35 L45 17" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M32 35 L32 47" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round"/>
+            </svg>
+            Yay<b>Commerce</b>
+          </a>
+          <p>Building the WooCommerce plugins your store's been missing. Since 2017, from Nha Trang, Vietnam.</p>
+          <div class="socials"><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="WordPress">W</a><a href="#" aria-label="YouTube">▶</a></div>
+        </div>
+        <div class="footer-col"><h4>Plugins</h4><a href="product.html">YayMail</a><a href="product.html">YayCurrency</a><a href="product.html">YayPricing</a><a href="product.html">YaySwatches</a><a href="product.html">YayExtra</a></div>
+        <div class="footer-col"><h4>More plugins</h4><a href="product.html">YaySMTP</a><a href="product.html">YayReviews</a><a href="product.html">YayBoost</a><a href="index.html#bundle">Bundle</a><a href="index.html#pricing">Pricing</a></div>
+        <div class="footer-col"><h4>Resources</h4><a href="#">Documentation</a><a href="#">Demo store</a><a href="#">Changelog</a><a href="#">Blog</a><a href="index.html#faq">FAQ</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="#">About us</a><a href="#">Careers</a><a href="#">Contact</a><a href="#">Affiliates</a><a href="#">Support</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> YayCommerce. Not affiliated with Automattic or WooCommerce.</span>
+        <span>Made with 💚 in Nha Trang, Vietnam</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -106,4 +106,86 @@
       setTimeout(() => { if (btn) { btn.disabled = false; btn.textContent = btn.dataset.label || "Submit"; } }, 2500);
     });
   });
+
+  /* Announcement bar: dismiss */
+  const announceClose = document.querySelector("[data-announce-close]");
+  if (announceClose) announceClose.addEventListener("click", () => document.body.classList.add("announce-closed"));
+
+  /* Countdown timer (HH:MM:SS) */
+  const cd = document.querySelector("[data-countdown]");
+  if (cd) {
+    let total = 48 * 3600; // seconds
+    const pad = (n) => String(n).padStart(2, "0");
+    const tick = () => {
+      const h = Math.floor(total / 3600), m = Math.floor((total % 3600) / 60), s = total % 60;
+      cd.textContent = pad(h) + ":" + pad(m) + ":" + pad(s);
+      if (total > 0) total--;
+    };
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  /* Product gallery */
+  const gMain = document.querySelector("[data-gallery-main]");
+  const gThumbs = document.querySelector("[data-gallery-thumbs]");
+  if (gMain && gThumbs) {
+    gThumbs.querySelectorAll("button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const i = btn.dataset.index;
+        gThumbs.querySelectorAll("button").forEach((b) => b.classList.toggle("is-active", b === btn));
+        gMain.querySelectorAll(".slide").forEach((s) => s.classList.toggle("is-active", s.dataset.slide === i));
+      });
+    });
+  }
+
+  /* Plan selector (product page) */
+  const plans = document.querySelector("[data-plans]");
+  if (plans) {
+    const now = document.querySelector("[data-price-now]");
+    const was = document.querySelector("[data-price-was]");
+    const off = document.querySelector("[data-price-off]");
+    const sNow = document.querySelector("[data-sticky-now]");
+    const sWas = document.querySelector("[data-sticky-was]");
+    const sWho = document.querySelector(".sticky-buy .who span");
+    const select = (opt) => {
+      plans.querySelectorAll(".plan-opt").forEach((o) => o.classList.toggle("is-active", o === opt));
+      const p = +opt.dataset.price, w = +opt.dataset.was;
+      const pct = Math.round((1 - p / w) * 100);
+      if (now) now.textContent = "$" + p;
+      if (was) was.textContent = "$" + w;
+      if (off) off.textContent = "Save " + pct + "%";
+      if (sNow) sNow.textContent = "$" + p;
+      if (sWas) sWas.textContent = "$" + w;
+      const name = opt.querySelector(".pname").childNodes[0].textContent.trim();
+      const sites = opt.querySelector(".pname small").textContent.trim();
+      if (sWho) sWho.innerHTML = '<span class="stars" style="color:#f5a623">★★★★★</span> 4.9 · ' + name + " — " + sites;
+    };
+    plans.querySelectorAll(".plan-opt").forEach((opt) => opt.addEventListener("click", () => select(opt)));
+  }
+
+  /* Sticky buy bar */
+  const stickyBuy = document.querySelector("[data-sticky-buy]");
+  const buySection = document.getElementById("buy");
+  if (stickyBuy && buySection) {
+    const onScrollBuy = () => {
+      const past = buySection.getBoundingClientRect().bottom < 0;
+      const footer = document.querySelector(".site-footer");
+      const nearFooter = footer && footer.getBoundingClientRect().top < window.innerHeight + 80;
+      stickyBuy.classList.toggle("show", past && !nearFooter);
+    };
+    onScrollBuy();
+    window.addEventListener("scroll", onScrollBuy, { passive: true });
+  }
+
+  /* Tabs */
+  const tabs = document.querySelector("[data-tabs]");
+  if (tabs) {
+    const panes = document.querySelectorAll("[data-pane]");
+    tabs.querySelectorAll("button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        tabs.querySelectorAll("button").forEach((b) => b.classList.toggle("is-active", b === btn));
+        panes.forEach((p) => p.classList.toggle("is-active", p.dataset.pane === btn.dataset.tab));
+      });
+    });
+  }
 })();
